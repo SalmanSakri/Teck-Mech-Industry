@@ -33,7 +33,7 @@ const Navbar = (props) => {
             <div className={isOpen ? "mobile-menu-link " : "nav-container "}>
               <ul className="nav-box">
                 <li><Link style={{ color: props.theme === "light-theme" ? "#0c0fb1" : "black" }} to="/">Home</Link></li>
-                <li><Link style={{ color: props.theme === "light-theme" ? "white" : "black" }} to="/contact">Contact</Link></li>
+                <li><Link style={{ color: props.theme === "light-theme" ? "white" : "black" }} to="/">Contact</Link></li>
                 <li>
                   <Link style={{ color: props.theme === "light-theme" ? "black" : "#0c0fb1" }} to="/product">Product</Link>
                 </li>

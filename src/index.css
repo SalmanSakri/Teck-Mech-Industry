@@ -25,15 +25,15 @@ a{
 text-decoration: none;
 }
 
-.light-theme {
+/* .light-theme {
   background-color: #ffffffad;
   color: black;
-}
+} */
 
-.dark-theme {
+/* .dark-theme {
   background-color: var(--main-background);
   color: var(--text-color1);
-}
+} */
 
 #blur.active{
   filter: blur(20px);
@@ -43,7 +43,11 @@ text-decoration: none;
 #blur.blurred {
   filter: blur(5px);
 }
-
+@media (max-width:800px){
+  body{
+    display: none;
+  }
+}
 /* @media(max-width:768px){
   main{
     filter: blur(5px) brightness(0.7);
