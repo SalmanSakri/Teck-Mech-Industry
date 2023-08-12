@@ -11,15 +11,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul {
+  list-style: none;
+}
+a{
+text-decoration: none;
+}
 
 .light-theme {
-  background-color: #cff9fbad;
+  background-color: #ffffffad;
   color: black;
 }
 
@@ -27,6 +34,21 @@ code {
   background-color: var(--main-background);
   color: var(--text-color1);
 }
+
+#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+#blur.blurred {
+  filter: blur(5px);
+}
+
+/* @media(max-width:768px){
+  main{
+    filter: blur(5px) brightness(0.7);
+  }
+} */
 /* For Mobile devices: 320px-480px
 For Tablets or iPad: 480px - 768px
 For Laptop or small-size screen: 768px -1024px

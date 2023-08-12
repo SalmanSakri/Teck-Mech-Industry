@@ -1,68 +1,118 @@
+ .top-section {
+     background-color: #64d6edd4;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 50px;
+ }
+ .social-box span {
+     padding: 8px;
+ }
 
-.top-section {
-    background-color: #64d6edd4;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-}
-ul{
-    list-style: none;
-}
-.social-box span{
-    padding: 8px;
-}
-.social-box,.email-box{
-    display: flex;
-}
-.social-box,.darkMode-container li{
-    font-size: 24px;
-}
-a{
-    text-decoration: none;
-}
-.email-center{
-    position: relative;
-    top: 3px;
-    padding: 4px;
-}
+ .social-box,
+ .email-box {
+     display: flex;
+ }
+
+ .social-box,
+ .darkMode-container li {
+     font-size: 24px;
+ }
+
+ .email-center {
+     position: relative;
+     top: 3px;
+     padding: 4px;
+ }
 
 
-/* navbar start  */
-.nav-section{
-    margin: 16px 25px;
-}
-.logo{
-    position: absolute;
-}
-.logo img{
-    height: 56px;
-    width: 270px;
-}
-.nav-container{
-    display: flex;
-    justify-content: end;
-    align-items: center
-}
+ /* navbar start  */
 
-.nav-box{
-    display: flex;
-}
-.nav-box li{
-    padding-right: 28px;
-    font-size: large;
-    font-weight: 500;
-}
+ .nav-section {
+     margin: 16px 25px;
+ }
 
-/* navbar end  */
+ .logo {
+     position: absolute;
+ }
 
-/* For Laptop or small-size screen: 768px -1024px */
+ .logo img {
+     height: 56px;
+     width: 270px;
+ }
 
-@media (max-width: 650px) {
-    .top-section{
-        background-color: white;
-    }
-    .text-center{
-        display: none;
-    }
-  }
+ .nav-container {
+     display: flex;
+     align-items: center
+ }
+
+ .nav-box {
+     display: flex;
+     justify-content:flex-end;
+     flex: auto;
+ }
+
+ .nav-box li {
+     padding-right: 28px;
+     font-size: large;
+     font-weight: 500;
+ }
+
+ .menu {
+     position: absolute;
+     top: 82px;
+     right: 32px;
+     display: none;
+     transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+ }
+
+ /* navbar end  */
+
+ /* For Laptop or small-size screen: 768px -1024px */
+
+ @media (max-width: 768px) {
+     .nav-container {
+         display: none;
+     }
+
+     .text-center {
+         display: none;
+     }
+
+     .logo {
+         position: unset;
+     }
+
+     .menu {
+         display: block;
+         z-index: 9;
+     }
+
+     .nav-box {
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 280px;
+     }
+
+     .mobile-menu-link {
+
+         background-color: aqua;
+         height: 100vh;
+         justify-content: center;
+         display: flex;
+         width: 100%;
+         /* width: min(75vw, 400px); */
+         align-items: center;
+         position: fixed;
+         top: 50px;
+         z-index: 9;
+         bottom: 0px;
+         visibility: visible;
+         right: 0px;
+         padding: 50px 10px;
+     }
+
+     .nav-box li {
+         margin: 21px;
+     }
+ }

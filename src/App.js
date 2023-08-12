@@ -1,15 +1,25 @@
-import Navbar from "./component/Navbar";
 import React from 'react'
-import ImgSlider from "./component/ImgSlider"
-import Img from "./component/img"
 
+import Footer from "./component/Footer"
+import Landindpage from './component/LandingPage/Landindpage';
+import Product from "./component/ProductPage/Product"
+import { BrowserRouter as  Route, Routes, BrowserRouter } from 'react-router-dom';
 function App() {
 
   return (
     <>
-      < Navbar />
-      {/* <ImgSlider /> */}
-      <Img />
+      <main>
+       <BrowserRouter>
+       
+           <Routes> 
+            <Route exact path="/" element={<Landindpage/>} />
+            <Route exact path="/product" element={<Product/>} />
+            <Route exact path="*" element="404" />
+          </Routes>
+
+          <Footer />
+          </BrowserRouter>
+      </main>
     </>
 
   );

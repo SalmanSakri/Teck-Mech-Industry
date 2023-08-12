@@ -1,0 +1,81 @@
+{
+
+
+  "vales":[
+        {
+            "id":1,
+            "img":"Productimg/TMS001.png",
+            "description":"Conical Spring"
+        },
+        {
+            "id":2,
+            "img":"Productimg/TMS002.png",
+            "description":"Conical Spring"
+        },
+        {
+            "id":4,
+            "img":"Productimg/TMS004.png",
+            "description":""
+        },
+        {
+            "id":7, 
+            "img":"Productimg/TMS007.png",
+            "description":"PTFE Bellow"
+        },
+    
+        {
+            "id":9,
+            "img":"Productimg/TMS009.png",
+            "description":"Single Coil Spring "
+        },
+        {
+            "id":10,
+            "img":"Productimg/TMS010.png",
+            "description":"Metal Bellow "
+        }
+    ],
+    "seals":[
+        {
+            "id":1,
+            "img":"Productimg/TMS019.png",
+            "description":"Reactor-Agitator-Mixer"
+        },
+
+        {
+            "id":2,
+            "img":"Productimg/TMS018.png",
+            "description":""
+        },
+        {
+            "id":3,
+            "img":"Productimg/TMS017.png",
+            "description":"High Pressure Seal"
+        },
+        {
+            "id":4,
+            "img":"Productimg/TMS016.png",
+            "description":""
+        },
+        {
+            "id":5,
+            "img":"Productimg/TMS015.png",
+            "description":""
+        },
+        {
+            "id":6,
+            "img":"Productimg/TMS014.png",
+            "description":"Capsulated Spring"
+        },
+        {
+            "id":8,
+            "img":"Productimg/TMS012.png",
+            "description":"Multi Spring"
+        },
+        {
+            "id":11,
+            "img":"Productimg/TMS011.png",
+            "description":"Metal Bellow "
+        }
+        
+    ]
+}

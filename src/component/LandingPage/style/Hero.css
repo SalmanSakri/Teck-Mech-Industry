@@ -1,0 +1,153 @@
+.hero {
+    overflow-x: hidden;
+}
+
+.hero-service {
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 150px;
+    content: "";
+    display: block;
+    background: #232121;
+    opacity: 0.72;
+    z-index: 1;
+
+}
+
+.ak-container {
+    max-width: 1170px;
+    width: 100%;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+.effect_title {
+    padding: 32px 0 20px;
+}
+
+.hero-title {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+}
+
+.after-effet1 {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    height: 16px;
+}
+
+.after-effet1:before {
+    /* background: url(images/style1.png) no-repeat; */
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.after-effet1:after {
+    background: #ececec;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    content: "";
+    left: 0;
+    right: 0;
+}
+
+.service_slider.owl-carousel {
+    position: relative;
+    margin-top: -80px;
+    bottom: -80px;
+    z-index: 2;
+    background: #237ac6;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    margin: 30px auto;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.hero-img {
+    margin: auto;
+    display: flex;
+    width: 85%;
+    align-items: center;
+    height: 100vh;
+    padding: 26px;
+}
+
+.hero-img img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.hero-center{
+    position: absolute;
+}
+.hero-center p{
+    margin: 150px;
+    color: white;
+    font-size: 2rem;
+}
+.hero-center span{
+    background-color: #43499B;
+    padding: 0px 10px 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    margin: 80px 0;
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.extra {
+    background: #fff;
+    padding: 50px !important;
+    transition: 0.3s;
+}
+h2{
+    margin: 0px;
+}
+.ihero{
+    font-size: 3em;
+    color: blue;
+}
+
+@media screen and (max-width:1200px) {
+    .owl-carousel {
+        width: 80%
+    }
+}
+@media screen and (max-width:768px){
+    .row{
+        flex-wrap: wrap;
+    }
+}

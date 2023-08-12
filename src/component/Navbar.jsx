@@ -1,80 +1,58 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "../style/Navbar.css"
-import { MdEmail, MdFacebook, MdLightMode } from "react-icons/md";
-import { RiInstagramFill, RiLinkedinBoxFill, RiTwitterFill } from "react-icons/ri";
-const Navbar = () => {
 
-  // light-dark mode start
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai'; 
+// import PropTypes from "prop-types"
+const Navbar = (props) => {
+  console.log(props)
 
-  const [theme, setTheme] = useState("light-theme");
-  const changeTheme = () => {
-    if (theme === "light-theme") {
-      setTheme("dark-theme top-section-dark");
-    } else {
-      setTheme("light-theme")
-    }
-  }
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
-
-  // light-dark mode end
-
-
+  // menu start 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (setIsOpen(!isOpen)) {
+      var blur = document.getElementById("blur")
+      blur.classList.toggle("active")
+    }
+
   };
+  // menu end  
+
   return (
     <>
-      <div className='top-section' style={{ backgroundColor: theme === "light-theme" ? "black" : "white" }} >
-        <div className="email">
-          <ul className='email-box'>
-            <li>
-              <a href="">
-                <span className='email-center' style={{ color: theme === "light-theme" ? "white" : "black" }}>
-                  <MdEmail />
-                </span>
-              </a>
-            </li>
-            <li><a href=""> <span className='text-center' style={{ color: theme === "light-theme" ? "white" : "black" }}>info@techmechindustry.com</span></a></li>
-          </ul>
-        </div>
-        <div className="top-social">
-          <ul className='social-box'>
-            <li><a href=""><span style={{ color: theme === "light-theme" ? "white" : "black" }}><MdFacebook /></span></a></li>
-            <li><a href=""><span style={{ color: theme === "light-theme" ? "white" : "black" }}><RiInstagramFill /></span></a></li>
-            <li><a href=""><span style={{ color: theme === "light-theme" ? "white" : "black" }} ><RiLinkedinBoxFill /></span></a></li>
-            <li><a href=""><span style={{ color: theme === "light-theme" ? "white" : "black" }}><RiTwitterFill /></span></a></li>
-          </ul>
-        </div>
-
-        <div className="darkMode">
-          <ul className='darkMode-container'>
-            <li><span style={{ color: theme === "light-theme" ? "white" : "black" }}><MdLightMode onClick={() => changeTheme()} /></span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="nav-section">
+      <section className="nav-section">
         <nav>
           <div className="nav">
             <div className="logo">
               <img src="images/logotm.png" alt="logo" />
             </div>
-            <div className="nav-container">
+
+            <div className={isOpen ? "mobile-menu-link " : "nav-container "}>
               <ul className="nav-box">
-                <li><a style={{ color: theme === "light-theme" ? "black" : "white" }} href="">Home</a></li>
-                <li><a style={{ color: theme === "light-theme" ? "black" : "white" }} href="">Contact</a></li>
-                <li><a style={{ color: theme === "light-theme" ? "black" : "white" }} href="">Product</a></li>
-                <li><a style={{ color: theme === "light-theme" ? "black" : "white" }} href="">certification</a></li>
+                <li><Link style={{ color: props.theme === "light-theme" ? "#0c0fb1" : "black" }} to="/">Home</Link></li>
+                <li><Link style={{ color: props.theme === "light-theme" ? "white" : "black" }} to="/contact">Contact</Link></li>
+                <li>
+                  <Link style={{ color: props.theme === "light-theme" ? "black" : "#0c0fb1" }} to="/product">Product</Link>
+                </li>
+                <li><Link style={{ color: props.theme === "light-theme" ? "black" : "#0c0fb1" }} to="/certification">Certification</Link></li>
               </ul>
+            </div>
+
+            <div className="menu">
+              <span onClick={toggleMenu} className={isOpen ? "content blurred" : "content"}>
+                {
+                  isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />
+                }
+
+              </span>
             </div>
           </div>
         </nav>
-      </div>
+      </section>
+
     </>
   )
 }

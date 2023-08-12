@@ -1,0 +1,51 @@
+.pro-slider-heading {
+    text-align: center;
+}
+
+.pro-slider-container {
+    display: flex;
+}
+
+.pro-slider-top {
+    margin: 62px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pro-slider-box img {
+    width: 248px;
+    height: 215px;
+}
+
+.pro-slider-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    visibility: visible;
+}
+.pro-slider-heading h2{
+    margin: 26px;
+    padding-bottom: 26px;
+}
+.seal-heading{
+    text-align: center;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+
+.vales-heading {
+    text-align: center;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+.seal-first{
+    margin: 88px;
+}
