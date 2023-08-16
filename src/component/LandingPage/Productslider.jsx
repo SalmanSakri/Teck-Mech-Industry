@@ -81,7 +81,7 @@ const Productslider = () => {
             <Carousel additionalTransfrom={0}
                 arrows
                 autoPlay
-                autoPlaySpeed={10000}
+                autoPlaySpeed={2000}
                 centerMode={true}
                 className=""
                 containerClass="container-with-dots"
@@ -127,7 +127,7 @@ const Productslider = () => {
             <Carousel additionalTransfrom={0}
                 arrows
                 autoPlay
-                autoPlaySpeed={10000}
+                autoPlaySpeed={3000}
                 centerMode={true}
                 className=""
                 containerClass="container-with-dots"
