@@ -1,13 +1,15 @@
 import React from 'react'
 import Header from '../LandingPage/Header'
 import Navbar from '../Navbar'
-import Navproduct from './Navproduct'
+import Dropdown from '../Dropdown'
+import CapsulatedSpring from "../ProductPage/CapsulatedSpring"
 const Product = () => {
   return (
     <div>
     <Header/>
  <Navbar/>
- <Navproduct/>
+ <Dropdown/>
+<CapsulatedSpring/>
  </div>
   )
 }

@@ -1,0 +1,48 @@
+.drop-nav {
+  justify-content: space-around;
+  background-color: #5555f1;
+  display: flex;
+}
+
+.drop-nav-box {
+  display: flex;
+  margin: 17px;
+}
+
+.drop-nav-box li {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 0.5px;
+  border-style: double;
+  border-color: black;
+  /* border-radius: ; */
+
+}
+
+.drop-nav-box li:hover {
+  color: white;
+  transform: scale(1.10);
+}
+
+.drop-1 {
+  background-color: aqua;
+}
+
+.drop-2 {
+  background-color: burlywood;
+}
+
+.drop-3 {
+  background-color: violet;
+}
+
+.drop-4 {
+  background-color: chocolate;
+}
+
+@media (max-width:1200px) {
+  .drop-nav-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}

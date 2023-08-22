@@ -78,6 +78,7 @@ const Productslider = () => {
             {/* <div className='seal'>
                 <h4 className='seal-heading'>1. SEALS</h4>
             </div> */}
+            
             <Carousel additionalTransfrom={0}
                 arrows
                 autoPlay
@@ -112,7 +113,7 @@ const Productslider = () => {
                             <div className='pro-slider-top' key={value.id}>
                                 <div className='pro-slider-box'  >
                                     <img src={value.img} alt="img" />
-                                    <p className='pro-slider-heading'>{value.description} </p>
+                                    <p className='pro-slider-heading'>{value.heading} </p>
                                 </div>
                             </div>
                         )
@@ -158,7 +159,7 @@ const Productslider = () => {
                             <div className='pro-slider-top'key={value.id}>
                                 <div className='pro-slider-box' >
                                     <img src={value.img} alt="img" />
-                                    <p className='pro-slider-heading'>{value.description} </p>
+                                    <p className='pro-slider-heading'>{value.heading} </p>
                                 </div>
                             </div>
                         )

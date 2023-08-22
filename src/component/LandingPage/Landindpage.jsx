@@ -6,6 +6,7 @@ import Img from './Img'
 import Certification from './Certification';
 import Hero from "./Hero"
 import Productslider from "./Productslider"
+// import Material from "./Material"
 const Landindpage = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ const Landindpage = () => {
             <Hero />
             <Certification />
             <Productslider />
+            {/* <Material/> */}
         </div>
     )
 }

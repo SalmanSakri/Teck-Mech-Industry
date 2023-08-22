@@ -1,81 +1,102 @@
 {
-
-
-  "vales":[
+    "img": [
         {
             "id":1,
-            "img":"Productimg/TMS001.png",
-            "description":"Conical Spring"
+            "img":"images/bgc.png",
+            "heading":"Water engenaring"
+        
         },
         {
             "id":2,
-            "img":"Productimg/TMS002.png",
-            "description":"Conical Spring"
-        },
-        {
-            "id":4,
-            "img":"Productimg/TMS004.png",
-            "description":""
-        },
-        {
-            "id":7, 
-            "img":"Productimg/TMS007.png",
-            "description":"PTFE Bellow"
-        },
-    
-        {
-            "id":9,
-            "img":"Productimg/TMS009.png",
-            "description":"Single Coil Spring "
-        },
-        {
-            "id":10,
-            "img":"Productimg/TMS010.png",
-            "description":"Metal Bellow "
-        }
-    ],
-    "seals":[
-        {
-            "id":1,
-            "img":"Productimg/TMS019.png",
-            "description":"Reactor-Agitator-Mixer"
-        },
-
-        {
-            "id":2,
-            "img":"Productimg/TMS018.png",
-            "description":""
+            "img":"images/bgf.png",
+            "heading":"Water engenaring"
+        
         },
         {
             "id":3,
-            "img":"Productimg/TMS017.png",
-            "description":"High Pressure Seal"
+            "img":"images/bgp.png",
+            "heading":"Water engenaring"
+        
         },
         {
             "id":4,
-            "img":"Productimg/TMS016.png",
-            "description":""
-        },
-        {
-            "id":5,
-            "img":"Productimg/TMS015.png",
-            "description":""
-        },
-        {
-            "id":6,
-            "img":"Productimg/TMS014.png",
-            "description":"Capsulated Spring"
-        },
-        {
-            "id":8,
-            "img":"Productimg/TMS012.png",
-            "description":"Multi Spring"
-        },
-        {
-            "id":11,
-            "img":"Productimg/TMS011.png",
-            "description":"Metal Bellow "
-        }
+            "img":"images/bgc.png",
+            "heading":"Water engenaring"
         
+        }
+    ],
+    "vales": [
+        {
+            "id": 1,
+            "img": "Productimg/TMS001.png",
+            "heading": "Conical Spring"
+        },
+        {
+            "id": 2,
+            "img": "Productimg/TMS002.png",
+            "heading": "Conical Spring"
+        },
+        {
+            "id": 4,
+            "img": "Productimg/TMS004.png",
+            "heading": ""
+        },
+        {
+            "id": 7,
+            "img": "Productimg/TMS007.png",
+            "heading": "PTFE Bellow"
+        },
+        {
+            "id": 9,
+            "img": "Productimg/TMS009.png",
+            "heading": "Single Coil Spring "
+        },
+        {
+            "id": 10,
+            "img": "Productimg/TMS010.png",
+            "heading": "Metal Bellow "
+        }
+    ],
+    "seals": [
+        {
+            "id": 1,
+            "img": "Productimg/TMS019.png",
+            "heading": "Reactor-Agitator-Mixer"
+        },
+        {
+            "id": 2,
+            "img": "Productimg/TMS018.png",
+            "heading": ""
+        },
+        {
+            "id": 3,
+            "img": "Productimg/TMS017.png",
+            "heading": "High Pressure Seal"
+        },
+        {
+            "id": 4,
+            "img": "Productimg/TMS016.png",
+            "heading": ""
+        },
+        {
+            "id": 5,
+            "img": "Productimg/TMS015.png",
+            "heading": ""
+        },
+        {
+            "id": 6,
+            "img": "Productimg/TMS014.png",
+            "heading": "Capsulated Spring"
+        },
+        {
+            "id": 8,
+            "img": "Productimg/TMS012.png",
+            "heading": "Multi Spring"
+        },
+        {
+            "id": 11,
+            "img": "Productimg/TMS011.png",
+            "heading": "Metal Bellow "
+        }
     ]
 }
