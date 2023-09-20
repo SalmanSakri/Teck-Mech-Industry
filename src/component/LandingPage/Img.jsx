@@ -13,51 +13,31 @@ const Img = () => {
                 "Accept": "application/json"
             }
         }).then((response) => {
-            return response.json()
-        }).then((myjson) => {
+            return response.json()})
+            .then((myjson) => {
             console.log(myjson)
-            setData(myjson.img)
+            localStorage.setItem('ImgData', JSON.stringify(myjson.img));
+             setData(myjson.img)
+            console.log(localStorage)
         })
+        .catch((error) => {
+            console.error('Error fetching data:', error);
+          });
     }
     useEffect(() => {
         getData()
     }, [])
-
-
-    const images = [
-        { src: "images/bgc.png",
-         alt: 'Image 2' ,
-         heading:""
-        },
-        { src: "images/bgf.png", alt: 'Image 2' },
-        { src: "images/bgp.png", alt: 'Image 1' },
-
-    ];
     return (
         <section>
             <Carousel
-                autoPlay
+                autoPlay={true}
                 interval={2000} // Set the interval between slides (in milliseconds)
                 infiniteLoop
                 showThumbs={false} // Disable thumbnail navigation
                 showStatus={false} // Disable status indicator
                 showArrows={true} // Disable arrow navigation
             >
-                {/* {
-                    images.map((image, index) => (
-                        <div key={index} className='slider-container'>
-                            <motion.img
-                                src={image.src}
-                                alt={image.alt}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                            /> */}
-                            {/* <h3></h3> */}
-                        {/* </div>
-                    ))
-                } */}
+               
 
                 {
                     data.map((value, index) => (
@@ -70,7 +50,12 @@ const Img = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.5 }}
                             />
-                            {/* <h3></h3> */}
+                            <div className='slider-container-header'>
+                                <h3 className='slider-container-header-list'>
+                                    {value.heading}
+                                </h3>
+                            </div>
+
                         </div>
                     ))
                 }
